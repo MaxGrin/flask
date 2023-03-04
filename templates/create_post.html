@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница добавления книг</title>
+</head>
+<body>
+    <h1>Страница добавления книг</h1>
+    <form action="/create" method="post">
+        <p><label>Название книги: </label><input type="text" name="title" value="" required></p>
+        <p><label>Автор книги: </label><input type="text" name="author" value="" required></p>
+        <p><label>Краткое описание: </label><textarea name="intro" id="" cols="30" rows="10" required></textarea></p>
+        <p><label>Кол-во страниц: </label><input type="text" name="amount" value="" required></p>
+        <p><label>Жанр: </label><input type="text" name="genre" value="" required></p>
+        <p><label>Цена: </label><input type="text" name="price" value="" required></p>
+        <p><label>Наличие книги: </label><input type="text" name="available" value=""></p>
+        <p><input type="submit" value="Сохранить"></p>
+    </form>
+</body>
+</html>

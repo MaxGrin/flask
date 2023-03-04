@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ books.title }}</title>
+</head>
+<body>
+    <center>
+    <h1>{{ books.title }}</h1>
+    <p>{{ books.author }}</p>
+    <p>{{ books.intro }}</p>
+    <p>{{ books.amount }}</p>
+    <p>{{ books.genre }}</p>
+    <p>{{ books.price }}</p>
+    <p>Есть в наличии: {{ books.available }}</p>
+    <p><b>Дата: {{ books.date.date() }}</b></p>
+    <a href="/post/{{books.id}}/delete"><button>Удалить</button></a>
+    <a href="/post/{{books.id}}/update"><button>Редактировать</button></a>
+
+    </center>
+</body>
+</html>
